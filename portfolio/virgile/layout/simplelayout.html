@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 1%;
+            border: 1px solid black;
+            width: 98vw;
+        }
+        header{
+            height: 5vh;
+            width: 98vw;
+            background-color: blanchedalmond;
+        }
+        nav{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            height: 5vh;
+            width: 98vw;
+            background-color: lightcyan;
+        }
+        .inline{
+            vertical-align: top;
+            display: inline-block;
+            box-align: top;
+        }
+        .aside{
+            height: 80vh;
+            width: 38vw;
+            box-align: top;
+            background-color: yellow;
+        }
+        .main{
+            margin-left: -5px;
+            border-bottom: none;
+            background-color: pink;
+            border-left: 1px solid black;
+        }
+        .tr{
+            height: 40vh;
+            width: 60vw;
+        }
+        .br{
+            height: 40vh;
+            width: 60vw;
+            border-top: 1px solid black;
+            border-bottom: none;
+        }
+        footer{
+            border-top: 1px solid black;
+            height: 5vh;
+            width: 98vw;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <aside class="aside inline">sidebar</aside>
+    <div class="main inline">
+        <section class="tr ">top right</section>
+        <section class="br ">bottom right</section>
+    </div>
+    
+    <footer>footer</footer>
+</body>
+</html>
